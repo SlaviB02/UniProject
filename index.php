@@ -44,47 +44,9 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="num">Call: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Stamina<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#fh5co-gallery">Gallery</a></li>
-							<li><a href="#fh5co-trainer">Our Team</a></li>
-							<li><a href="partners.html">Partners</a></li>
-							<li><a href="#fh5co-blog">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+	<?php include 'inc/header.php'; ?>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<div id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -97,7 +59,7 @@
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 
 	<div id="fh5co-services" class="fh5co-bg-section">
 		<div class="container">
@@ -107,7 +69,7 @@
 						<span><img class="img-responsive" src="images/dumbbell.png" alt=""></span>
 						<h3>Weights</h3>
 						<p>We provide diffrent dumbbels, barbells, barbell weights and many more</p>
-						<p><a href="#" class="btn btn-primary btn-outline btn-sm">More <i class="icon-arrow-right"></i></a></p>
+						
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
@@ -115,7 +77,7 @@
 						<span><img class="img-responsive" src="images/exercise.png" alt=""></span>
 						<h3>Cardio machines</h3>
 						<p>We provide the newest cardio machines: treadmills, bikes, rowing machines and many more</p>
-						<p><a href="#" class="btn btn-primary btn-outline btn-sm">More <i class="icon-arrow-right"></i></a></p>
+						
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
@@ -123,7 +85,7 @@
 						<span><img class="img-responsive" src="images/machine.png" alt=""></span>
 						<h3>Equipment</h3>
 						<p>We provide the best equipment on the market. You can choose from a wide variety of equipment</p>
-						<p><a href="#" class="btn btn-primary btn-outline btn-sm">More <i class="icon-arrow-right"></i></a></p>
+						
 					</div>
 				</div>
 			</div>
@@ -141,9 +103,9 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-4 animate-box">
 					<div class="trainer">
-						<a href="#"><img class="img-responsive" src="images/team1.jpg" alt="trainer"></a>
+						<a><img class="img-responsive" src="images/team1.jpg" alt="trainer"></a>
 						<div class="title">
-							<h3><a href="#">Petur Petrov</a></h3>
+							<h3><a>Petur Petrov</a></h3>
 							<span>Equipment Expert</span>
 						</div>
 						<div class="desc text-center">
@@ -158,9 +120,9 @@
 				</div>
 				<div class="col-md-4 col-sm-4 animate-box">
 					<div class="trainer">
-						<a href="#"><img class="img-responsive" src="images/team2.jpg" alt="trainer"></a>
+						<a><img class="img-responsive" src="images/team2.jpg" alt="trainer"></a>
 						<div class="title">
-							<h3><a href="#">Georgi Ivanov</a></h3>
+							<h3><a>Georgi Ivanov</a></h3>
 							<span>Weights Expert</span>
 						</div>
 						<div class="desc text-center">
@@ -175,9 +137,9 @@
 				</div>
 				<div class="col-md-4 col-sm-4 animate-box">
 					<div class="trainer">
-						<a href="#"><img class="img-responsive" src="images/team3.jpg" alt="trainer"></a>
+						<a><img class="img-responsive" src="images/team3.jpg" alt="trainer"></a>
 						<div class="title">
-							<h3><a href="#">Sam Todorova</a></h3>
+							<h3><a>Sam Todorova</a></h3>
 							<span>Machines Expert</span>
 						</div>
 						<div class="desc text-center">
@@ -226,26 +188,18 @@
 					<ul id="fh5co-portfolio-list">
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gym1.jpg); ">
-							<a href="#">
-								
-							</a>
+							<a></a>
 						</li>
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gym2.jpg); ">
-							<a href="#">
-								
-							</a>
+							<a></a>
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gym3.jpg); ">
-							<a href="#">
-								
-							</a>
+							<a></a>
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gym4.jpg); "> 
-							<a href="#">
-								
-							</a>
+							<a></a>
 						</li>
 					</ul>		
 				</div>
@@ -316,11 +270,11 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/blog1.jpg" alt=""></a>
+						<a><img class="img-responsive" src="images/blog1.jpg" alt=""></a>
 						<div class="blog-text">
-							<h3><a href=""#>New Legend Machines</a></h3>
+							<h3><a>New Legend Machines</a></h3>
 							<span class="posted_on">Dec. 5th</span>
-							<span class="comment"><a href="">44<i class="icon-speech-bubble"></i></a></span>
+							<span class="comment"><a>44<i class="icon-speech-bubble"></i></a></span>
 							<p>We have in stock new Legend machines which you can now order with your home gym</p>
 							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
@@ -328,11 +282,11 @@
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/blog2.jpg" alt=""></a>
+						<a><img class="img-responsive" src="images/blog2.jpg" alt=""></a>
 						<div class="blog-text">
-							<h3><a href=""#>Quick breakfast smoothie</a></h3>
+							<h3><a>Quick breakfast smoothie</a></h3>
 							<span class="posted_on">Dec. 3rd</span>
-							<span class="comment"><a href="">88<i class="icon-speech-bubble"></i></a></span>
+							<span class="comment"><a>88<i class="icon-speech-bubble"></i></a></span>
 							<p>Here's a quick healthy smoothie recipe to start your day the right foot </p>
 							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
@@ -340,11 +294,11 @@
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/blog3.jpg" alt=""></a>
+						<a><img class="img-responsive" src="images/blog3.jpg" alt=""></a>
 						<div class="blog-text">
-							<h3><a href=""#>Simplest deadlift tutorial</a></h3>
+							<h3><a>Simplest deadlift tutorial</a></h3>
 							<span class="posted_on">Dec. 3rd</span>
-							<span class="comment"><a href="">101<i class="icon-speech-bubble"></i></a></span>
+							<span class="comment"><a>101<i class="icon-speech-bubble"></i></a></span>
 							<p>Get the perfect deadlift technique in the easiest and fastest way possible</p>
 							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
@@ -354,36 +308,8 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h3>A Little About Stamina.</h3>
-					<p>We really care about our clients and we try to keep it simple and fun while we work together to build your perfect Home Gym</p>
-					<p><a class="btn btn-primary" href="#">Become A Member</a></p>
-				</div>
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2020 Stamina. All Rights Reserved.</small> 
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
+	<?php include 'inc/footer.php'; ?>
+	
 	</div>
 
 	<div class="gototop js-top">

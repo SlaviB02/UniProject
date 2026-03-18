@@ -45,47 +45,9 @@
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="num">Call: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Stamina<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="index.html#fh5co-gallery">Gallery</a></li>
-							<li><a href="index.html#fh5co-trainer">Our Team</a></li>
-							<li><a href="partners.html">Partners</a></li>
-							<li><a href="index.html#fh5co-blog">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+	<?php include 'inc/header.php'; ?>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<div id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -98,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 
 	
 	<div id="fh5co-gallery">
@@ -115,14 +77,14 @@
 					<ul id="fh5co-portfolio-list">
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/logo1.jpg); ">
-							<a href="#">
+							<a>
 								<div class="case-studies-summary">
 									<h2>Underground</h2>
 								</div>
 							</a>
 						</li>
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/logo2.jpg); ">
-							<a href="#">
+							<a>
 								<div class="case-studies-summary">
 									<h2>Unsplash</h2>
 								</div>
@@ -130,7 +92,7 @@
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/logo3.jpg); ">
-							<a href="#">
+							<a>
 								<div class="case-studies-summary">
 									<h2>AtCost</h2>
 								</div>
@@ -138,7 +100,7 @@
 						</li>
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/logo4.jpg); "> 
-							<a href="#">
+							<a>
 								<div class="case-studies-summary">
 									<h2>Gulf</h2>
 								</div>
@@ -151,39 +113,7 @@
 	</div>
 	
 
-	
-
-
-	<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h3>A Little About Stamina.</h3>
-					<p>We really care about our clients and we try to keep it simple and fun while we work together to build your perfect Home Gym</p>
-					<p><a class="btn btn-primary" href="#">Become A Member</a></p>
-				</div>
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2020 Stamina. All Rights Reserved.</small> 
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
+	<?php include 'inc/footer.php'; ?>
 	</div>
 
 	<div class="gototop js-top">
