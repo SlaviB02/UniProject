@@ -36,9 +36,10 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/rating.css">
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
 
 
 	</head>
@@ -207,56 +208,54 @@
 		</div>
 	</div>
 	
-	<div id="fh5co-testimonial" class="fh5co-bg-section">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Happy Clients</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row animate-box">
-						<div class="owl-carousel owl-carousel-fullwidth">
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<figure>
-										<img src="images/person1.jpg" alt="user">
-									</figure>
-									<span>Daniel Dimitrov, via <a href="#" class="twitter">Twitter</a></span>
-									<blockquote>
-										<p>&ldquo;In a world where convenience meets fitness, Stamina stands out as a game-changer. As someone who values both health and time, I was initially skeptical about the efficacy of an online home gym service. However, after a few months of working with them, I am delighted to report that Stamina has exceeded my expectations on multiple fronts.&ldquo;</p>
-									</blockquote>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<figure>
-										<img src="images/person2.jpg" alt="user">
-									</figure>
-									<span>John Angelov, via <a href="#" class="twitter">Facebook</a></span>
-									<blockquote>
-										<p>&ldquo;Navigating the Stamina platform is a breeze. The interface is intuitively designed, making it easy for users of all fitness levels to find the perfect home gym. The variety of equipment caters to different preferences and goals, ensuring a personalized fitness experience.&ldquo;</p>
-									</blockquote>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-slide active text-center">
-									<figure>
-										<img src="images/person3.jpg" alt="user">
-									</figure>
-									<span>Kamen Dochev, via <a href="#" class="twitter">Google</a></span>
-									<blockquote>
-										<p>&ldquo;One of the standout features of Stamina is the extensive range of equipment options available. From strength training and cardio machines to diffrent barbells and dumbbells, the platform covers all aspects of fitness.&rdquo;</p>
-									</blockquote>
-								</div>
+	<?php 
+		require_once 'randomreview.php'; 
+		$review = getRandomReview();
+	?>
+	<?php
+	$images = [
+	'images/person1.jpg',
+	'images/person2.jpg',
+	'images/person3.jpg'
+	];
+
+	$randomImage = $images[array_rand($images)];
+	?>
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <?php if ($review): ?>
+            <div class="testimony-slide text-center">
+              <figure>
+					<img src=<?php echo htmlspecialchars($randomImage); ?> 
+						alt="user" 
+						class="rounded-circle" 
+						style="width:200px; height:200px; object-fit:cover; border: 4px solid #f39c12;">
+				</figure>
+                <span class="review-author">
+                    <?php echo htmlspecialchars($review['fname'] . ' ' . $review['lname']); ?>, via Website
+                </span>
+                <blockquote class="review-text">
+                    <p>&ldquo;<?php echo htmlspecialchars($review['review']); ?>&rdquo;</p>
+                </blockquote>
+                <div class="review-rating">
+					<div class="row form-group">
+						<div class="col-md-12">
+							<label>Rating</label>
+							 <div class="review-rating mb-0" style="color:#FFD700; font-size:4rem;">
+								<?php 
+								$rating = (int) $review['rating'];
+								for ($i = 0; $i < $rating; $i++) echo "★"; 
+								for ($i = $rating; $i < 5; $i++) echo "☆"; 
+								?>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
 
 
 
@@ -276,7 +275,6 @@
 							<span class="posted_on">Dec. 5th</span>
 							<span class="comment"><a>44<i class="icon-speech-bubble"></i></a></span>
 							<p>We have in stock new Legend machines which you can now order with your home gym</p>
-							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
 					</div>
 				</div>
@@ -288,7 +286,6 @@
 							<span class="posted_on">Dec. 3rd</span>
 							<span class="comment"><a>88<i class="icon-speech-bubble"></i></a></span>
 							<p>Here's a quick healthy smoothie recipe to start your day the right foot </p>
-							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
 					</div>
 				</div>
@@ -300,7 +297,6 @@
 							<span class="posted_on">Dec. 3rd</span>
 							<span class="comment"><a>101<i class="icon-speech-bubble"></i></a></span>
 							<p>Get the perfect deadlift technique in the easiest and fastest way possible</p>
-							<a href="#" class="btn btn-primary">Read More</a>
 						</div> 
 					</div>
 				</div>

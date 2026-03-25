@@ -29,6 +29,7 @@
 							<li><a href="index.php#fh5co-trainer">Our Team</a></li>
 							<li><a href="partners.php">Partners</a></li>
 							<li><a href="index.php#fh5co-blog">Blog</a></li>
+							<li><a href="review.php">Leave a Review</a></li>
 							<li><a href="contact.php">Contact</a></li>
 						</ul>
 					</div>
