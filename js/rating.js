@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const value = this.getAttribute('data-value');
             ratingInput.value = value;
 
-            // Reset all stars
+            
             stars.forEach(s => s.classList.remove('active'));
 
-            // Highlight clicked star and all before it
+            
             this.classList.add('active');
             let prev = this.previousElementSibling;
             while (prev) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Optional: highlight on hover
+        
         star.addEventListener('mouseover', function() {
             stars.forEach(s => s.classList.remove('hover'));
             this.classList.add('hover');
