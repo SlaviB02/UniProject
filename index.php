@@ -209,7 +209,7 @@
 	</div>
 	
 	<?php 
-		require_once 'randomreview.php'; 
+		require_once 'queries/randomreview.php'; 
 		$review = getRandomReview();
 	?>
 	<?php

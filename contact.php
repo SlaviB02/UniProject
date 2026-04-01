@@ -85,7 +85,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
-					<form method="POST" action="submit_contact.php">
+					<form action="queries/submit_contact.php" method="POST">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<input type="text" name="fname" class="form-control" placeholder="Your firstname">

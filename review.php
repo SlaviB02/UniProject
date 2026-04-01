@@ -75,7 +75,7 @@
 			<div class="row">
 				<div class="col-md-6 animate-box">
 					<h3>Leave us a review</h3>
-					<form method="POST" action="submit_review.php">
+					<form action="queries/submit_review.php" method="POST">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<input type="text" name="fname" class="form-control" placeholder="Your firstname">
