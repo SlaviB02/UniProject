@@ -1,11 +1,7 @@
 <?php
 function getRandomReview() {
 
-    $host = 'localhost';
-    $db   = 'homegym';
-    $user = 'root';
-    $pass = '';
-
+   require 'config.php';
 
     $conn = new mysqli($host, $user, $pass, $db);
     if ($conn->connect_error) {
